@@ -73,14 +73,14 @@ header {
       vertical-align: top;
       width: 100%; }
   .main .acerca-de article {
-    background: #FFFCF6;
+    background: #f1e0bd;
     padding: 80px;
-    width: 40%;
+    width: 30%;
     position: relative;
     top: 300px;
     float: right;
     z-index: 1;
-    box-shadow: 0px 0px 15px black; }
+    box-shadow: 0px 0px 15px rgb(2, 1, 1); }
     .main .acerca-de article h3 {
       font-size: 50px;
       font-weight: 300;
