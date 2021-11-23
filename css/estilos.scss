@@ -1,0 +1,393 @@
+$destacado: #FFDA89;
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-moz-box-sizing: border-box;
+	-moz-moz-box-sizing: border-box;
+	-ms-moz-box-sizing: border-box;
+	-o-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-size: 16px;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+// :::::::::::: HEADER
+
+header{
+	width: 100%;
+	background:url('../img/portada.jpg') #000;
+	background-size:cover;
+	background-attachment: fixed;
+	background-position: center 0;
+
+	.contenedor{
+		position: relative;
+		height: 700px;
+	}
+
+	.menu{
+		width: 100%;
+		text-align: right;
+
+		a{
+			color: #fff;
+			font-size: 20px;
+			font-weight: 300;
+			display: inline-block;
+			margin: 40px 20px;
+			text-decoration: none;
+			position:relative;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.textos{
+		width: 100%;
+		color:#fff;
+		position:absolute;
+		top:50%;
+		margin-top: -52px;
+
+		.nombre{
+			font-size: 50px;
+			font-weight: 300;
+			
+			span{
+				font-weight: 600;
+				color:$destacado;
+			}
+		}
+
+		h3{
+			font-weight: 300;
+			font-size: 25px;
+			font-style: italic;
+		}
+	}
+
+}
+
+// ::::::::::: MAIN
+
+.main{
+	background:url('../img/textura.png');
+	background-repeat: repeat;
+
+	.acerca-de{
+		.contenedor{
+			overflow:visible;
+			position:relative;
+		}
+		.foto{
+			width: 60%;
+			position: absolute;
+			left:0;
+			top:-50px;
+			z-index: 0;
+			box-shadow: 0px 0px 15px rgb(0,0,0);
+
+			img{
+				vertical-align:top;
+				width: 100%;
+			}
+		}
+
+		article{
+			background: #FFFCF6;
+			padding: 40px;
+			width: 50%;
+			position:relative;
+			top:100px;
+			float:right;
+			z-index:1;
+			box-shadow: 0px 0px 15px rgb(0,0,0);
+
+			h3{
+				font-size: 50px;
+				font-weight: 300;
+				margin-bottom:40px;
+			}
+
+			p{
+				line-height: 28px;
+				margin-bottom:15px;
+			}
+		}
+	}
+
+	.menu{
+		padding-top: 570px;
+		margin-bottom:50px;
+
+		.titulo{
+			color: $destacado;
+			font-size: 40px;
+			font-weight: 300;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		.contenedor-menu, .contenedor-menu2 {
+			border:1px solid $destacado;
+			background: transparent;
+			padding: 10px;
+			overflow:hidden;
+		}
+
+		article{
+			width: 50%;
+			padding: 20px;
+			float:left;
+
+			.categoria{
+				color: $destacado;
+				font-size: 22px;
+				font-weight: 700px;
+				margin-bottom: 40px;
+				text-align: center;
+			}
+
+			.plato{
+				margin-bottom: 30px;
+				padding-bottom: 20px;
+				border-bottom: 4px dotted #fff;
+				overflow:hidden;
+			}
+
+			.nombre{
+				color:#fff;
+				font-size: 20px;
+				margin-bottom:15px;
+				float:left;
+			}
+
+			.precio{
+				color: #fff;
+				font-size: 20px;
+				margin-bottom:15px;
+				float:right;	
+			}
+			.descripcion{
+				font-size: 16px;
+				font-style: italic;
+				color:#CCCCCC;
+				clear:both;
+			}
+		}
+	}
+
+	.galeria{
+		overflow:hidden;
+
+		.foto{
+			width: 25%;
+			float:left;
+
+			img{
+				width: 100%;
+				vertical-align: top;
+				opacity: .5;
+
+				&:hover{
+					opacity: 1;
+					-webkit-transition: all .3s ease;
+					-o-transition: all .3s ease;
+					transition: all .3s ease; 					
+				}
+			}
+		}
+
+	}
+
+	.ubicacion {
+		background: #000;
+		padding: 60px 0;
+		overflow:hidden;
+
+		.titulo{
+			color: $destacado;
+			text-align: center;
+			font-size: 40px;
+			line-height:40px;
+			font-weight: 300;
+			margin-bottom:40px;
+		}
+
+		.direccion{
+			color: #fff;
+			float:left;
+			width: 50%;
+			text-align: left;
+
+			.calle{
+				margin-bottom: 15px;
+			}
+		}
+		.horarios{
+			color: #fff;
+			float:right;
+			width: 50%;
+			text-align: right;
+			overflow:hidden;
+
+			h4{
+				color: $destacado;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			.entre-semana, .entre-semana{
+				width: 50%;
+				float:left;
+				text-align:center;
+			}
+		}
+	}
+
+	.mapa{
+		width: 100%;
+		overflow:hidden;
+
+		iframe{
+			width: 100%;
+			 max-height:600px;
+		}
+	}
+	
+}
+
+// ::::::::::: FOOTER
+
+footer {
+	background:#000;
+	.redes-sociales{
+		text-align: center;
+		a{
+			margin: 20px;
+			color: $destacado;
+			&:hover{
+				color:#DB9D17
+			}
+			
+			i{
+				font-size: 1.5em;
+			}	
+		}
+		
+	}
+	.copyright{
+		text-align: center;
+		font-weight: 200;
+		padding: 15px 0;
+		color: #fff;
+		a, i{
+			text-decoration: none;
+			color: $destacado;
+			&:hover{
+				color:#DB9D17
+			}
+		}
+
+	}
+}
+
+// ::::::::::: ADAPTANDOLO
+
+@media screen and (max-width: 800px){
+ 	header {
+ 		.contenedor{
+ 			position: static;
+ 			height: auto;
+ 		}
+
+ 		.textos{
+ 			position: static;
+ 			margin: 100px 0;
+ 			.nombre{
+ 				font-size: 30px;
+ 			}
+ 			h3{
+ 				font-size: 18px;
+ 			}
+ 		}
+
+ 		.menu{
+ 			text-align: center;
+ 			a{
+ 				margin: 10px 20px;
+ 			}
+ 		}
+ 	}
+
+ 	.main{
+ 		.acerca-de{
+ 			.foto{
+ 				width: 100%;
+ 				position: relative;
+ 			}
+
+ 			article{
+ 				position: relative;
+ 				width: 100%;
+ 				top:-50px;
+ 				transform: translate(0px, 0);
+ 			}
+ 		}
+
+ 		.menu{
+ 			padding-top: 300px;
+
+ 			article{
+ 				width: 100%;
+ 			}
+ 		}
+
+ 		.galeria{
+ 			.foto{
+ 				width: 50%;	
+ 			}
+ 			
+ 		}
+ 		.mapa{
+ 			width: 80%;
+ 			margin: auto;
+ 		}
+ 	}
+ }
+
+@media screen and (max-width: 400px) {
+	.main{
+		.acerca-de{
+			article{
+				h3{
+					font-size: 34px;
+					margin-bottom: 10px ;
+				}
+			}
+		}
+		article{
+			.nombre, .precio{
+				font-size: 16px;
+				line-height:16px;
+			}
+		}
+
+		.ubicacion{
+			.direccion, .horarios{
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
