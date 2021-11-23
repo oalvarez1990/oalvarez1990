@@ -178,6 +178,9 @@ header {
         width: 50%;
         float: left;
         text-align: center; }
+        .main .ubicacion .sede{
+          align-items: center;
+        }
   .main .mapa {
     width: 100%;
     overflow: hidden; }
@@ -250,5 +253,5 @@ footer {
   .main .ubicacion .direccion, .main .ubicacion .horarios {
     width: 100%;
     text-align: center; } }
-
+.SE
 
